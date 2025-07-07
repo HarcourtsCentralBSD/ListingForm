@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Listing Baru</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="curved-background"></div>
+
+    <header class="app-header">
+        <div class="header-content">
+            <img src="HarcourtsLogo.png" alt="App Logo" class="app-logo">
+            <h1>Listing App</h1> </div>
+    </header>
+
+    <div class="container">
+        <h2>Tambah Listing Baru</h2>
+        <form id="listingForm">
+            <div class="form-group">
+                <label for="namaListing">Nama Listing:</label>
+                <div class="input-with-icon">
+                    <input type="text" id="namaListing" name="namaListing" placeholder="Masukkan nama listing" required>
+                    <span id="loadingStatusIcon" class="loading-status-icon"></span>
+                </div>
+                
+                <p id="infoTextAboveDropdown" class="info-text-above-dropdown">Pastikan listing belum ada</p>
+                <div id="namaListingSuggestions" class="suggestions-dropdown"></div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="ukuran">Ukuran (contoh: 100m²):</label>
+                <input type="text" id="ukuran" name="ukuran" placeholder="Masukkan ukuran properti" required>
+            </div>
+            <button type="submit">Submit Listing</button>
+        </form>
+
+        <hr style="margin: 30px 0;">
+
+        <button id="goToSearchPage">Lihat & Cari Semua Listing</button>
+
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
